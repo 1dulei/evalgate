@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evalgate"
+version = "0.2.0"
+description = "Deterministic Evaluation Harness & Continuous Red-Teaming Quality Gate for LLM Applications"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  {name = "Du Lei", email = "a1437699690@163.com"}
+]
+keywords = ["llm", "evaluation", "red-teaming", "quality-engineering", "ci-gate", "ai-safety"]
+
+[project.scripts]
+evalgate = "evalgate.cli:main"
